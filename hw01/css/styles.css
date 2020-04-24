@@ -1,0 +1,171 @@
+/* Global styles
+------------------------------------*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+</style>
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* body{
+  border-style: solid;
+  border-width: 10px 10px;
+
+} */
+header {
+  background: #F0EDE6;
+  height: 500px;
+  border-style: solid;
+  border-width: 10px 5px;
+}
+h1{
+  color:#2B394A;
+  text-align: center;
+  font-family: 'Avro', serif;
+  font-size: 4.0em;
+  font-weight: 700;
+  line-height: 50%;
+}
+h2{
+  color:#2B394A;
+  text-align: center;
+  font-family: 'Avro',serif;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color:#2B394A
+}
+h3{
+  color:#2B394A;
+  text-align: left;
+  font-family: 'Avro',serif;
+  font-size: 1.5em;
+}
+h4{  color:#2B394A;
+  text-align: center;
+  font-family: 'Avro',serif;
+  font-size: 2.5em;
+  line-height: 50%;
+}
+p {
+  color: #2B394A;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: lighter;
+}
+
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+/* Projects
+------------------------------------*/
+.projects {
+  background: #FC888C;
+  border-style: solid;
+  border-width: 0px 5px;
+}
+.projects h3{
+  color:#2B394A;
+  text-align: left;
+  font-family: 'Avro',serif;
+  font-size: 1.5em;
+}
+.projects p{
+  color: #2B394A;
+  text-align:left;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 2;
+}
+.projects h5{
+  color: #2B394A;
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+.projects a{
+  color:#2B394A;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+img {
+  float:left;
+  display:block;
+  text-align:right;
+  margin-right: 20px
+}
+
+/* .projects div{
+  justify-content: flex-start|flex-end|center;
+} */
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #C5D0DD;
+  border-style: solid;
+  border-width: 10px 5px;
+  display: block;
+  text-align: left;
+}
+.work-experience h5{
+  color: #2B394A;
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+li{
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+}
+/* Education
+------------------------------------*/
+.education {
+background: #75858F;
+border-style: solid;
+border-width: 0px 5px;
+}
+
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #F0EDE6;
+  border-style: solid;
+  border-width: 10px 5px;
+}
+.contact-list p{
+  color:#2B394A;
+  text-align: center;
+  font-family: 'Avro',serif;
+  font-size: 1.5em;
+}
