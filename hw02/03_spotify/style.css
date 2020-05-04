@@ -1,0 +1,214 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #fff;
+}
+a, a:hover, a:visited, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font:
+}
+
+/**********/
+/* Layout */
+/**********/
+aside, footer, header, nav, section, article {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto 100px;
+    grid-template-areas:
+       "left main"
+       "bottom bottom";
+    height: 100vh;
+}
+
+aside {
+    background-color: #000;
+    grid-area: left;
+
+}
+a{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left:20px;
+}
+header {
+    background: #111;
+    display:flex;
+    flex-direction: row-reverse;
+    margin-top: auto;
+    position: fixed;
+    width: calc(100vw - 250px);
+    left: 250px;
+    align-items:flex-end;
+    /* border:solid 1px white; */
+}
+nav {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+nav > a{
+  margin-left: 20px;
+}
+.play-button{
+  display:none;
+}
+nav>a:hover {
+  text-decoration: underline;
+  text-decoration-color: #00FF00;
+}
+.artist-card:hover .play-button{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: flex-end;
+  float: right;
+  align-items: center;
+  color: white;
+  background-color:#00FF00;
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+}
+
+header > a{
+  margin-top: 20px;
+  margin-right:15px;
+  border:solid 1px gray;
+  border-radius:40%;
+  height: 35px;
+  /* box-sizing: content-box-box; */
+  /* height: 30px; */
+  width:150px;
+  text-align: center;
+  text-transform:uppercase;
+  font-size: 0.8em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header:hover > a{
+  background-color: #222;
+} */
+main {
+    background: #111;
+    grid-area: main;
+    min-height: calc(350px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    z-index: 3;
+}
+section {
+  background-color: #222;
+}
+footer {
+    background: #222;
+    grid-area: bottom;
+}
+aside a.selected{
+  border-left: 2px solid #00FF00;
+}
+/* header:hover>#upgrade{
+  background-color: #222;
+} */
+header>#profile:hover{
+  background-color: #222;
+}
+header>#upgrade:hover{
+  background-color: #222;
+}
+
+/* header:hover>i{
+  background-color: #222;
+} */
+
+#featured-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.artist-card {
+    /* padding:10px; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 10%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+}
+
+.image-div {
+    background-size:cover;
+    width:200px;
+    height:200px;
+    border: solid 1px #222;
+    border-radius: 50%
+}
+
+@media screen and (max-width: 1000px) {
+    #featured-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    overflow: hidden;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+       "main main"
+       "bottom bottom";
+    height: 100vh;
+  }
+    #featured-content{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: auto;
+    }
+    aside{
+      display:none;
+    }
+}
+
+
+/***************************/
+/* Accessories & Florishes */
+/***************************/
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    min-height: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.3);
+}
