@@ -14,3 +14,20 @@
 	background-size: cover;
 	height:100%;
 }
+
+.treasure-map1 {
+	width: 150px;
+	margin-left: 30%;
+	margin-top: -10%;
+}
+.comic {
+	width: 150px;
+	margin-left: 66%;
+	margin-top: 20%;
+}
+
+.spell {
+	width: 150px;
+	margin-left: 15%;
+	margin-top: -5%;
+}

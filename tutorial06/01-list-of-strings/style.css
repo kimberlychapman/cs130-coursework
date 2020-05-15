@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
+
+body {
+   color: #444;
+   margin-bottom: 40px;
+   margin-top: 0px;
+   font-family: 'Open Sans', sans-serif;
+}
+h2 {
+   font-family: 'Open Sans Condensed', sans-serif;
+   color: #000;
+}
+p {
+   line-height: 1.7em;
+   font-size: 1.0em;
+}
+
+body {
+   background: #00a4cf;
+}
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+}
+.cards article {
+   width: 50%;
+   box-sizing: border-box; 
+}
+.cards article div {
+   padding: 20px;
+   margin: 40px 20px 0px 20px;
+   border-radius: 2px;
+   background-color: #fafafa;
+   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+      0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+.cards article div h2 {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+   .cards article {
+      width: 100%;
+   }
+}
+
+
